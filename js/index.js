@@ -244,7 +244,7 @@ const renderSearchAnime = (res) => {
 }
 
 window.onload = function () {
-    if (window.location.pathname === '/index.html') {
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
         fetchTopAnime()
     }
   
