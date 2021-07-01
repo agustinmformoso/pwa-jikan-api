@@ -9,6 +9,8 @@ if ('serviceWorker' in navigator) {
 
 window.addEventListener('offline', event => {
   document.querySelector('body').classList.add('offline');
+  const alert = document.getElementById('alert-offline');
+  alert.className = 'alert alert-danger position-fixed top-0 end-0'
 });
 
 window.addEventListener('online', event => {
