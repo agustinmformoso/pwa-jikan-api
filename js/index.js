@@ -57,7 +57,6 @@ const fetchSearchAnime = (searchValue) => {
     )
     .then(
         res => {
-            console.log(res)
             renderSearchAnime(res)
         }
     )
